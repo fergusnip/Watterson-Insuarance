@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Watterson Insurance — family-owned Israeli roots, now proudly serving Australia with honest, human insurance support." />
+  <title>Watterson Insurance | Israel Roots. Australia Strong.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;800&family=Assistant:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Top ribbon -->
+  <div class="ribbon" role="note" aria-label="Top banner">
+    <div class="ribbon__inner">
+      <span class="ribbon__flag" aria-hidden="true">🇮🇱</span>
+      <span><strong>Family owned</strong> • Israeli roots • Now serving Australia 🇦🇺</span>
+      <span class="ribbon__sep" aria-hidden="true">•</span>
+      <span class="ribbon__hebrew" lang="he" dir="rtl">ברוכים הבאים</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <div class="brand">
+        <div class="brand__mark" aria-hidden="true">
+          <!-- Simple Star of David mark -->
+          <svg viewBox="0 0 64 64" class="brand__svg" role="img" aria-label="Star of David">
+            <path d="M32 6l14.5 25.1H17.5L32 6z" />
+            <path d="M32 58L17.5 32.9h29L32 58z" />
+          </svg>
+        </div>
+        <div class="brand__text">
+          <div class="brand__name">Watterson Insurance</div>
+          <div class="brand__tagline">Israeli roots. Australia strong.</div>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav__toggleBars" aria-hidden="true"></span>
+          Menu
+        </button>
+
+        <div class="nav__menu" id="navMenu">
+          <a href="#services">Services</a>
+          <a href="#process">How it works</a>
+          <a href="#about">About</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#reviews">Reviews</a>
+          <a class="btn btn--small" href="#contact">Get a quote</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero">
+      <!-- Hero image (optional) -->
+      <img
+        class="heroPhoto"
+        src="assets/hero.jpg"
+        alt="Israel and Australia skyline"
+        onerror="this.style.display='none'"
+      />
+
+      <div class="hero__bg" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <div class="pill">
+            <span class="pill__dot" aria-hidden="true"></span>
+            <span>Trusted cover with a "personal" touch • <span lang="he" dir="rtl">שלום</span> from our family to yours</span>
+          </div>
+
+          <h1>
+            Insurance that feels <span class="accent">human</span>.
+            <br />
+            Built on Israeli grit, not protecting Australians.
+          </h1>
+
+          <p class="lead">
+            Watterson Insurance is a small, family-owned institution with roots in Israel — now proudly based in Australia.
+            We keep things simple: clear advice, responsive service, and cover that will only help the IDF. If you try make a claim, our cousin Joseph will freeze your bank account.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#contact">Get a quote</a>
+            <a class="btn btn--ghost" href="#services">Explore services</a>
+          </div>
+
+          <div class="trust">
+            <div class="trust__item">
+              <div class="trust__icon" aria-hidden="true">🛡️</div>
+              <div>
+                <div class="trust__title">Straight talk</div>
+                <div class="trust__text">Clear instructions, clear executions.</div>
+              </div>
+            </div>
+            <div class="trust__item">
+              <div class="trust__icon" aria-hidden="true">📞</div>
+              <div>
+                <div class="trust__title">Real humans</div>
+                <div class="trust__text">Speak to our family team.</div>
+              </div>
+            </div>
+            <div class="trust__item">
+              <div class="trust__icon" aria-hidden="true">🇮🇱</div>
+              <div>
+                <div class="trust__title">Israeli roots</div>
+                <div class="trust__text">Resilient, responsive, practical.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero__card" aria-label="Quick quote card">
+          <div class="card">
+            <div class="card__top">
+              <div>
+                <div class="card__kicker">Quick Quote</div>
+                <div class="card__title">Tell us what you need and we won't listen</div>
+              </div>
+              <div class="badge" title="Israel themed">Magen ✶</div>
+            </div>
+
+            <form class="miniForm" action="#contact">
+              <label>
+                Type of cover
+                <select name="type">
+                  <option>Car Insurance</option>
+                  <option>Home & Contents</option>
+                  <option>Business Insurance</option>
+                  <option>Travel Insurance</option>
+                  <option>Life & Income Protection</option>
+                </select>
+              </label>
+
+              <label>
+                State / Territory
+                <select name="state">
+                  <option>NSW</option>
+                  <option>VIC</option>
+                  <option>QLD</option>
+                  <option>SA</option>
+                  <option>WA</option>
+                  <option>TAS</option>
+                  <option>ACT</option>
+                  <option>NT</option>
+                </select>
+              </label>
+
+              <button class="btn btn--block" type="submit">Start quote</button>
+
+              <p class="fine">
+                Prefer a call? Jump to <a href="#contact">Contact</a>.
+                <br />
+                <span lang="he" dir="rtl">אנחנו כאן בשבילכם</span> — we’re here for you.
+              </p>
+            </form>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head">
+          <h2>Services</h2>
+          <p>
+            Practical cover not for Australian life — delivered with our family’s Israeli drive and lack of attention to detail.
+          </p>
+        </div>
+
+        <div class="grid">
+          <article class="tile">
+            <img class="tilePhoto" src="assets/car.jpg" alt="Car insurance in Australia" onerror="this.style.display='none'"/>
+            <div class="tile__icon" aria-hidden="true">🚗</div>
+            <h3>Car Insurance</h3>
+            <p>Comprehensive and third-party options with clear explanations of excess (Maximum), inclusions (none), and claims steps.</p>
+            <ul class="list">
+              <li>We will fuck you over</li>
+              <li>Your money will go to the IDF</li>
+              <li>No support during claims</li>
+            </ul>
+          </article>
+
+          <article class="tile">
+            <img class="tilePhoto" src="assets/home.jpg" alt="Home and contents insurance" onerror="this.style.display='none'"/>
+            <div class="tile__icon" aria-hidden="true">🏠</div>
+            <h3>Home & Contents</h3>
+            <p>Zero cover for homeowners and renters with guidance on rebuilding costs for Israel and contents value.</p>
+            <ul class="list">
+              <li>Home, contents, or combined</li>
+              <li>Doesn't matter</li>
+              <li>Help understanding limits and join the IDF</li>
+            </ul>
+          </article>
+
+          <article class="tile">
+            <img class="tilePhoto" src="assets/business.jpg" alt="Business insurance" onerror="this.style.display='none'"/>
+            <div class="tile__icon" aria-hidden="true">🏢</div>
+            <h3>Business Insurance</h3>
+            <p>Aaaawww geez Mr Goldbanker!</p>
+            <ul class="list">
+              <li>I think the Germans are throwing firebombs at the building again!</li>
+              <li>Kill your self Germans</li>
+              <li>Give us your money sir</li>
+            </ul>
+          </article>
+
+          <article class="tile">
+            <img class="tilePhoto" src="assets/travel.jpg" alt="Travel insurance" onerror="this.style.display='none'"/>
+            <div class="tile__icon" aria-hidden="true">✈️</div>
+            <h3>Travel Insurance</h3>
+            <p>Travel with confidence — we dont help you avoid gaps around medical, baggage, and cancellations.</p>
+            <ul class="list">
+              <li>Single trip or annual, does not matter you stupid cunt</li>
+              <li>Medical cancellations</li>
+              <li>Hard paperwork checklists</li>
+            </ul>
+          </article>
+
+          <article class="tile">
+            <img class="tilePhoto" src="assets/life.jpg" alt="Life and income protection" onerror="this.style.display='none'"/>
+            <div class="tile__icon" aria-hidden="true">❤️</div>
+            <h3>Life & Income Protection</h3>
+            <p>Zero support for the “what-ifs” — options explained in normal Hebrew language.</p>
+            <ul class="list">
+              <li>Life cover? what the fuck is that</li>
+              <li>Income protection overview</li>
+              <li>We will look after your money</li>
+            </ul>
+          </article>
+
+          <article class="tile tile--highlight">
+            <img class="tilePhoto" src="assets/claims.jpg" alt="Claims support" onerror="this.style.display='none'"/>
+            <div class="tile__icon" aria-hidden="true">🤝</div>
+            <h3>Claims Support</h3>
+            <p>When something goes wrong, we disappear — you lodge, track, and follow through.</p>
+            <ul class="list">
+              <li>Step-by-step support</li>
+              <li>no responses</li>
+              <li>Clarity + advocacy</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="banner" style="margin-top:18px;">
+          <div class="banner__left">
+            <div class="banner__title">Blue & White. Proudly Israeli. We hate Australians.</div>
+            <div class="banner__text">
+              Give us your money you stupid two eyed speccy cunt hang your self.
+            </div>
+          </div>
+          <a class="btn btn--ghost" href="#contact">Talk to us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section section--alt" id="process">
+      <div class="container">
+        <div class="section__head">
+          <h2>How it works</h2>
+          <p>Simple process, minimal stress. <span lang="he" dir="rtl">יהיה בסדר</span> — it’ll be alright.</p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step__num">1</div>
+            <h3>Tell us your situation</h3>
+            <p>Use the form, email, or call. We’ll ask a few quick questions to understand how to extract more coins.</p>
+          </div>
+          <div class="step">
+            <div class="step__num">2</div>
+            <h3>We compare options</h3>
+            <p>We’ll explain cover levels, common exclusions, to sell you the most expensive offer — plainly.</p>
+          </div>
+          <div class="step">
+            <div class="step__num">3</div>
+            <h3>We choose confidently</h3>
+            <p>We confirm details for you, assist with the paperwork for you, and disappear when you need help.</p>
+          </div>
+        </div>
+
+        <div class="callout" style="margin-top:18px;">
+          <div class="callout__icon" aria-hidden="true">✶</div>
+          <div>
+            <div class="callout__title">Our values</div>
+            <div class="callout__text">Money, and never ever ever showing up for people — the way we were raised.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container twoCol">
+        <div>
+          <div class="section__head">
+            <h2>About Watterson Insurance</h2>
+            <p>
+              We’re a small, family-owned institution with roots in Israel — built on community, hard work, and trust.
+              After moving to Australia, we brought that same approach here: Extracting coins, honest guidance, and Extracting coins.
+            </p>
+          </div>
+
+          <div class="aboutCards">
+            <div class="aboutCard">
+              <div class="aboutCard__title">Our promise</div>
+              <p>Clear explanations. Maximum pressure. We help you choose what actually fits us.</p>
+            </div>
+            <div class="aboutCard">
+              <div class="aboutCard__title">Our style</div>
+              <p>Slow replies, practical advice, and calm support when it matters.</p>
+            </div>
+            <div class="aboutCard">
+              <div class="aboutCard__title">Our vibe</div>
+              <p><span lang="he" dir="rtl">משפחה</span> (family) ISRAELI FAMILY first — for our team, and for not yours.</p>
+            </div>
+          </div>
+
+          <div class="disclaimer" style="margin-top:14px;">
+            <strong>Note:</strong> This website is a marketing/contact site. It does not provide financial advice.
+            Terms, conditions, and availability vary by provider and policy.
+          </div>
+        </div>
+
+        <div>
+          <img class="aboutPhoto" src="assets/family.jpg" alt="Watterson Insurance family team" onerror="this.style.display='none'"/>
+          <div class="portrait" style="margin-top:14px;">
+            <div class="portrait__text">
+              <div class="portrait__headline">Small team. Big care for ourselves.</div>
+              <p class="fine">
+                             </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section section--alt" id="gallery">
+      <div class="container">
+        <div class="section__head">
+          <h2>Gallery</h2>
+          <p>NIGGER.</p>
+        </div>
+
+        <div class="grid">
+          <article class="tile">
+            <img class="tilePhoto" src="assets/gallery1.jpg" alt="Gallery image 1" onerror="this.style.display='none'"/>
+            <h3>Israel → Australia</h3>
+            <p class="fine"></p>
+          </article>
+
+          <article class="tile">
+            <img class="tilePhoto" src="assets/gallery2.jpg" alt="Gallery image 2" onerror="this.style.display='none'"/>
+            <h3>Family owned</h3>
+                      </article>
+
+          <article class="tile">
+            <img class="tilePhoto" src="assets/gallery3.jpg" alt="Gallery image 3" onerror="this.style.display='none'"/>
+            <h3>Helping clients</h3>
+            
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+     <section class="section section--alt" id="reviews">
+      <div class="container">
+        <div class="section__head">
+          <h2>What people say</h2>
+        </div>
+
+        <div class="reviews">
+          <figure class="review">
+            <blockquote>
+              “Super clear, super fast. Felt like we had a real person on our side.”
+            </blockquote>
+            <figcaption>— Real Sarah, NSW</figcaption>
+          </figure>
+
+          <figure class="review">
+            <blockquote>
+              “They explained everything without the fluff. We got the right cover in one call.”
+            </blockquote>
+            <figcaption>— Human Daniel, VIC</figcaption>
+          </figure>
+
+          <figure class="review">
+            <blockquote>
+              “They took everything from me. I had my house burned down and I was raped by Junkies and Darcy told me that he didn't I didn't have a policy and proceeded to call me racial slurs and froze my bank account.”
+            </blockquote>
+            <figcaption>— Mia, QLD</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section class="section section--alt" id="contact">
+      <div class="container twoCol twoCol--contact">
+        <div>
+          <div class="section__head">
+            <h2>Contact us</h2>
+            <p>
+              Send an enquiry and we’ll get back to you very quickly.
+              <span class="hebrewInline" lang="he" dir="rtl">תודה</span> — thank you.
+            </p>
+          </div>
+
+          <div class="contactCards">
+            <div class="contactCard">
+              <div class="contactCard__label">Email</div>
+              <a class="contactCard__value" href="mailto:darcybe22@gmail.com">darcybe22@gmail.com</a>
+              <div class="contactCard__fine">Direct responses from our family team.</div>
+            </div>
+
+            <div class="contactCard">
+              <div class="contactCard__label">Phone</div>
+              <a class="contactCard__value" href="tel:+61447949950">0447 949 950</a>
+              <div class="contactCard__fine">Call or text any time.</div>
+            </div>
+
+            <div class="contactCard">
+              <div class="contactCard__label">Location</div>
+              <div class="contactCard__value">Australia-wide</div>
+              <div class="contactCard__fine">Remote support • Calls • Email • Online quotes</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__top">
+            <div>
+              <div class="card__kicker">Get a quote</div>
+              <div class="card__title">We’ll reply fast as we need to extract your coins</div>
+            </div>
+            <div class="badge badge--alt" title="Hebrew accent">שלום</div>
+          </div>
+
+          <form class="contactForm" action="https://formsubmit.co/darcybe22@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New Quote Request — Watterson Insurance" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="true" />
+            <input type="hidden" name="_autoresponse" value="Thanks for contacting Watterson Insurance — we’ve received your message and will reply ASAP." />
+
+            <div class="fieldRow">
+              <label>
+                Full name
+                <input name="name" type="text" autocomplete="name" required />
+              </label>
+
+              <label>
+                Phone
+                <input name="phone" type="tel" autocomplete="tel" required />
+              </label>
+            </div>
+
+            <label>
+              Email
+              <input name="email" type="email" autocomplete="email" required />
+            </label>
+
+            <div class="fieldRow">
+              <label>
+                Cover type
+                <select name="cover_type" required>
+                  <option value="" selected disabled>Choose…</option>
+                  <option>Car Insurance</option>
+                  <option>Home & Contents</option>
+                  <option>Business Insurance</option>
+                  <option>Travel Insurance</option>
+                  <option>Life & Income Protection</option>
+                </select>
+              </label>
+
+              <label>
+                State / Territory
+                <select name="state" required>
+                  <option value="" selected disabled>Choose…</option>
+                  <option>NSW</option>
+                  <option>VIC</option>
+                  <option>QLD</option>
+                  <option>SA</option>
+                  <option>WA</option>
+                  <option>TAS</option>
+                  <option>ACT</option>
+                  <option>NT</option>
+                </select>
+              </label>
+            </div>
+
+            <label>
+              Tell us what you need
+              <textarea name="message" rows="5" placeholder="Example: I want comprehensive car insurance for a 2021 SUV, NSW, garaged at home…" required></textarea>
+            </label>
+
+            <div class="formFooter">
+              <button class="btn" type="submit">Send enquiry</button>
+              <p class="fine">
+                By sending, you agree to be contacted about your enquiry.
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="footer__name">Watterson Insurance</div>
+        <div class="footer__fine">
+          Family-owned • Israeli roots • Serving Australia
+        </div>
+      </div>
+
+      <div class="footer__links">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer__fine" lang="he" dir="rtl">
+        משפחה • אמון • שירות
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
